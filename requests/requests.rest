@@ -1,0 +1,77 @@
+# My Variables
+@contentType = application/json; charset=utf-8
+@baseurl = http://localhost:3001/api
+
+### GET all data measurements
+GET {{baseurl}}
+
+### GET one measurement only
+GET {{baseurl}}/6390ea95492693192b7e77ac
+
+### POST Request
+POST {{baseurl}}
+Content-type: {{contentType}}
+
+{
+    "dateTime":"2022-07-20T14:30:59.000+03:00",
+    "solarPanelsHigh":85,
+    "storageTankLow":75,
+    "fireplaceHigh":26,
+    "oilBurnerHigh":66,
+    "storageTankHigh":76,
+    "solarPump":0.73,
+    "fireplacePump":0,
+    "oilBurnerPump":0,
+    "currentPowerkW":5.1,
+    "dailyPowerkWh":32,
+    "weeklyPowerkWh":85,
+    "monthlyPowerkWh":437
+}
+
+### POST Request
+POST {{baseurl}} HTTP/1.1
+Content-type: {{contentType}}
+
+{
+    "dateTime": "2022-07-20T14:32:14.000+03:00",
+    "solarPanelsHigh": 84,
+    "storageTankLow": 75,
+    "fireplaceHigh": 26,
+    "oilBurnerHigh": 66,
+    "storageTankHigh": 77,
+    "solarPump": 0.0,
+    "fireplacePump": 0,
+    "oilBurnerPump": 0,
+    "currentPowerkW": 0,
+    "dailyPowerkWh": 32,
+    "weeklyPowerkWh": 85,
+    "monthlyPowerkWh": 437
+  }
+
+### Update Request
+PATCH {{baseurl}}/6390ebae1afd2bacf0986bcc
+Content-Type: {{contentType}}
+
+  {
+    "dateTime": "2022-07-20T10:52:56.000Z",
+    "solarPanelsHigh": 85,
+    "storageTankLow": 76,
+    "fireplaceHigh": 2,
+    "oilBurnerHigh": 67,
+    "storageTankHigh": 78,
+    "solarPump": 1,
+    "fireplacePump": 0,
+    "oilBurnerPump": 0,
+    "currentPowerkW": 5.6,
+    "dailyPowerkWh": 33,
+    "weeklyPowerkWh": 85,
+    "monthlyPowerkWh": 437
+  }
+
+### GET the updated measurement
+GET {{baseurl}}/6390ea95492693192b7e77ac
+
+### DELETE Request
+# DELETE {{baseurl}}/638a4758fa0f35ea9b5cfe14
+DELETE {{baseurl}}/638f640061929671431de0ca
+

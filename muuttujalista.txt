@@ -1,0 +1,9 @@
+Kentät \t-erottimella
+dateTime	solarPanelsHigh	storageTankLow	fireplaceHigh	oilBurnerHigh	storageTankHigh	solarPump	fireplacePump	oilBurnerPump	currentPowerkW	dailyPowerkWh	weeklyPowerkWh	monthlyPowerkWh
+
+Kentät ,-erottimella
+dateTime, solarPanelsHigh, storageTankLow, fireplaceHigh, oilBurnerHigh, storageTankHigh, solarPump, fireplacePump, oilBurnerPump, currentPowerkW, dailyPowerkWh, weeklyPowerkWh, monthlyPowerkWh
+
+
+api projection: muuttujalista
+_id: 0, dateTime: 1, solarPanelsHigh: 1, storageTankLow: 1, fireplaceHigh: 1, oilBurnerHigh: 1, storageTankHigh: 1, solarPump: 1, fireplacePump: 1, oilBurnerPump: 1, currentPowerkW: 1, dailyPowerkWh: 1, weeklyPowerkWh: 1, monthlyPowerkWh: 1, 
